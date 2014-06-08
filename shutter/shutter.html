@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="css/shutter.css" type="text/css" />
+<script type="text/javascript" src="js/shutter.js"></script>
+</head>
+<body>
+<div id="holder" style="position:absolute;top:100px;left:400px;"></div>
+<script type="text/javascript">
+    var st = new Shutter(
+        {
+            holder:document.getElementById('holder'),
+            imgs:["css/img/1.jpg","css/img/2.jpg","css/img/3.jpg","css/img/4.jpg","css/img/5.jpg","css/img/6.jpg"],
+            height:400,
+            width:600,
+            smoothness:100,//切割光滑度，越大越细腻
+            gridNumber:120,//最多图片切割个数
+            imgInterval:2000,//背景图片轮换间隔
+            slideInterval:10,//每切割一次的时间
+            stylesFlg:true,//和styles配合使用，true 删除默认展示风格，使用自己定义的styles风格，false 在默认展示风格基础上增加自己定义的styles个性风格
+            styles:[[4,4,0]],//个性风格属性
+            stylesRandom:true//随即组合样式，设置为true时，所有默认和自定义的样式将无效
+        }
+    );
+    st.play();
+</script>
+</body>
+</html>

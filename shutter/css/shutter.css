@@ -1,0 +1,6 @@
+.outer-container {position:relative;overflow:hidden;border:1px solid #000;}
+.chip-container{float:left;display:inline;position:relative;}
+.chip-container div{position:absolute; left:0;top:0;}
+ .pageBar{position:absolute;z-index:99;right:10px;bottom:10px}
+.pageBar a{display:block;background:#000;border:1px solid #666;color:#fff;float:left;width:16px;font-size:12px;margin:2px;text-align:center;line-height :16px;font-family:Arial;cursor:pointer;text-decoration:none;}
+.pageBar a:hover,.pageBar a.current{background:red;color:#fff;border:1px solid #600;border-top:1px solid #F96;border-left:1px solid #F96;}
